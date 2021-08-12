@@ -1,5 +1,14 @@
 
+body {
+    background-image: url(../img/kazbegi.jpeg);
+    display: flex;
+}
+
 h1 {
-    color: blue;
+    color: red;
+
+}
+
+.navbar {
 
 }

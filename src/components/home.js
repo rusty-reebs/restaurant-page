@@ -1,14 +1,21 @@
 // Initial page load function
 
 const home = () => {
-const content = document.getElementById("content");
-const heading = document.createElement("h1");
-heading.innerHTML = "Nina's Georgian Restaurant";
-const tagline = document.createElement("p");
-tagline.innerHTML = "Come enjoy some delicious Georgian food!";
+    const container = document.getElementById("container");
+    
+    const tagline = document.createElement("h3");
+    tagline.innerHTML = "Gamarjoba! All your favorite authentic Georgian recipes, made with pride in my kitchen!"
+    container.appendChild(tagline);
 
-content.appendChild(heading);
-content.appendChild(tagline);
+// TODO add testimonials and more copy
+
+// const heading = document.createElement("h1");
+// heading.innerHTML = "Nina's Georgian Restaurant";
+// const tagline = document.createElement("p");
+// tagline.innerHTML = "Come enjoy some delicious Georgian food!";
+
+// content.appendChild(heading);
+// // content.appendChild(tagline);
 };
 
 export { home };

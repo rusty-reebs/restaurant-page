@@ -1,14 +1,68 @@
 
 body {
     background-image: url(../img/kazbegi.jpeg);
-    display: flex;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.content {
+    margin: 15px 10px;
+    width: auto;
+}
+
+nav {
+    border-radius: 10px 10px 10px 0px;
+}
+.navbar {
+    background-color: #333;
+    opacity: 0.9;
+    border-radius: 10px 10px 10px 0px;
+}
+
+.container {
+    display: block;
+    width: 650px;
+    height: 600px;
+    background-color: #333;
+    opacity: 0.9;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    opacity: 0.9;
+}
+
+li {
+    float: right;
+    display: block;
+    padding: 8px;    
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 46px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }
 
 h1 {
+    float: left;
     color: red;
-
+    text-shadow: 1.5px 1.5px 3px black;
+    font-family:'Merienda', Arial, sans-serif;
+    font-size: 35px;
+    background-color: inherit;
+    margin-left: 45px;
+    margin-top: 15px;
 }
 
-.navbar {
-
-}

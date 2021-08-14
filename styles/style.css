@@ -12,12 +12,22 @@ body {
 nav {
     border-radius: 10px 10px 10px 0px;
 }
-.navbar {
+
+/* check out the minmax property for sizing */
+
+.navcontainer {
+    width: 100%;
     background-color: #333;
     opacity: 0.9;
     border-radius: 10px 10px 10px 0px;
 }
 
+nav {
+    max-width: 1720px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
 .container {
     display: block;
     width: 650px;
@@ -64,5 +74,6 @@ h1 {
     background-color: inherit;
     margin-left: 45px;
     margin-top: 15px;
+    margin-bottom: 0px;
 }
 

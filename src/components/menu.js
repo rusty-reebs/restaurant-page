@@ -5,7 +5,7 @@ const menu = () => {
     //? Remove child
     const tagline = document.createElement("h3");
     tagline.innerHTML = "Enjoy all of our delicious food!"
-    container.replaceChild(tagline);
+    container.appendChild(tagline); //? replaceChild
 
 
 };

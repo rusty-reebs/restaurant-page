@@ -5,13 +5,12 @@ body {
 }
 
 .content {
+    font-size: 0;
+    display: block;
     margin: 15px 10px;
     width: auto;
 }
 
-nav {
-    border-radius: 10px 10px 10px 0px;
-}
 
 /* check out the minmax property for sizing */
 
@@ -20,53 +19,58 @@ nav {
     background-color: #333;
     opacity: 0.9;
     border-radius: 10px 10px 10px 0px;
+    margin-bottom: 0;
 }
 
 nav {
     max-width: 1720px;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr 1fr;
 }
+
+.title {
+    grid-column: 1;
+    align-self: center;
+}
+
+.right-menu {
+    grid-column: 3;
+    align-self: center;
+
+}
+
 .container {
+    /* margin-top: 0; */
     display: block;
-    width: 650px;
-    height: 600px;
+    width: 680px;
+    height: 630px;
     background-color: #333;
     opacity: 0.9;
     border-radius: 0px 0px 10px 10px;
 }
 
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    opacity: 0.9;
-}
-
-li {
-    float: right;
-    display: block;
-    padding: 8px;    
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 46px;
-    text-decoration: none;
-}
-
-li a:hover {
+nav a:hover {
     background-color: #111;
 }
 
+.right-menu a {
+    /* float: right; */
+    text-decoration: none;
+    color: white;
+    /* display: block; */
+    /* text-align: center; */
+    padding: 10px 40px;
+    margin-right: 25px;
+    font-size: 20px;
+    background-color: #333;
+    opacity: 0.9;
+
+}
+
 h1 {
-    float: left;
+    /* float: left; */
     color: red;
     text-shadow: 1.5px 1.5px 3px black;
     font-family:'Merienda', Arial, sans-serif;
@@ -74,6 +78,14 @@ h1 {
     background-color: inherit;
     margin-left: 45px;
     margin-top: 15px;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
 }
 
+.homecontainer {
+    /* font-size: 15px; */
+}
+
+/* TODO append a div instead and see if it will close the gap */
+h3 {
+    font-size: 20px;
+}

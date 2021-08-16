@@ -2,10 +2,12 @@
 
 const home = () => {
     const container = document.getElementById("container");
-    
+    const homeContainer = document.createElement("div");
+    homeContainer.classList.add("homecontainer");
     const tagline = document.createElement("h3");
     tagline.innerHTML = "Gamarjoba! All your favorite authentic Georgian recipes, made with pride in my kitchen!"
-    container.appendChild(tagline);
+    container.appendChild(homeContainer);
+    homeContainer.appendChild(tagline);
 
 // TODO add testimonials and more copy
 

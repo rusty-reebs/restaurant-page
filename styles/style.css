@@ -82,10 +82,23 @@ h1 {
 }
 
 .homecontainer {
-    /* font-size: 15px; */
+    display: flex; /* this actually closed the gap between navbar and container! */
+    font-size: 0;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* TODO append a div instead and see if it will close the gap */
 h3 {
     font-size: 20px;
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+h2 {
+    font-size: 15px;
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
 }

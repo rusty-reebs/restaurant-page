@@ -48,13 +48,11 @@ navbuttons.appendChild(homeLink);
 navbuttons.appendChild(menuLink);
 navbuttons.appendChild(contactLink);
 
-const br = document.createElement("br");
-// content.appendChild(br);
 content.appendChild(container);
 import { home } from "./components/home";
-home();
+// home();
 import { menu } from "./components/menu";
-// menu();
+menu();
 
 //TODO need event listeners for navs
 //? navs do not need to be links, but event listeners?

@@ -1,14 +1,9 @@
 // TODO put contents of each tab inside own module
 // TODO write tab-swtiching logic inside index.js.
-// TODO write home, menu, contact tabs on this script
 
+import { home } from "./components/home";
+import { menu } from "./components/menu";
 
-
-
-//! render home, menu, and contact tabs along page top
-//! div along top
-//! three nested divs or ul (can set event listener for these?)
-//! event listeners for tabs that clear current contents and then runs tab "module"
 const content = document.getElementById("content");
 
 const container = document.createElement("div");
@@ -33,7 +28,6 @@ const navbuttons = document.createElement("div");
 navbuttons.classList.add("right-menu");
 nav.appendChild(navbuttons);
 
-
 const homeLink = document.createElement("a");
 const menuLink = document.createElement("a");
 const contactLink = document.createElement("a");
@@ -49,12 +43,28 @@ navbuttons.appendChild(menuLink);
 navbuttons.appendChild(contactLink);
 
 content.appendChild(container);
-import { home } from "./components/home";
-// home();
-import { menu } from "./components/menu";
-menu();
-
-//TODO need event listeners for navs
-//? navs do not need to be links, but event listeners?
 
 
+// Event listeners
+homeLink.addEventListener("click", () => {
+    clearContainer();
+    home();
+});
+menuLink.addEventListener("click", () => {
+    clearContainer();
+    menu();
+});
+contactLink.addEventListener("click", () => {
+    clearContainer();
+    contact();
+});
+
+const initialize = () => {
+    home();
+};
+
+const clearContainer = () => {
+    container.removeChild(container.childNodes[0]);
+};
+
+initialize();

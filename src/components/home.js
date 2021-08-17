@@ -10,6 +10,7 @@ const home = () => {
     homeContainer.appendChild(tagline);
 
     const supra = document.createElement("img");
+    supra.classList.add("imageframe");
     supra.src = "../img/old-interior.jpeg";
     supra.height = "333";
     supra.width = "500";

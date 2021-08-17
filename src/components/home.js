@@ -1,4 +1,4 @@
-// Initial page load function
+// Home page load function
 
 const home = () => {
     const container = document.getElementById("container");
@@ -26,13 +26,6 @@ const home = () => {
     const testiTwo = document.createElement("h2");
     testiTwo.innerHTML = "I'm a local, and the food here is like my grandma's cooking. You'll find true Georgian taste and hospitality at Nina's. - Giorgi, Georgia";
     homeContainer.appendChild(testiTwo);
-
-
-
-// TODO add testimonials and more copy
-
-// We use only the freshest ingredients!
-// Perfect for every ocassion! We're happy to serve large groups!
 
 };
 

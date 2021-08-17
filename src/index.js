@@ -1,22 +1,15 @@
-// TODO put contents of each tab inside own module
-// TODO write tab-swtiching logic inside index.js.
-
 import { home } from "./components/home";
 import { menu } from "./components/menu";
+import { contact } from "./components/contact";
 
-const content = document.getElementById("content");
+const content = document.getElementById("content"); // main div in the HTML file
 
-const container = document.createElement("div");
-container.classList.add("container");
-container.id = "container";
-const tagline = document.createElement("p");
-tagline.innerHTML = "Come enjoy some delicious Georgian food!";
 
-const navbar = document.createElement("div");
+const navbar = document.createElement("div"); // div for navbar
 navbar.classList.add("navcontainer");
 content.appendChild(navbar);
 
-const nav = document.createElement("nav");
+const nav = document.createElement("nav"); // appends nav element to navbar div
 navbar.appendChild(nav);
 
 const heading = document.createElement("h1");
@@ -34,14 +27,14 @@ const contactLink = document.createElement("a");
 homeLink.innerHTML = "Home";
 menuLink.innerHTML = "Menu";
 contactLink.innerHTML = "Contact";
-homeLink.href = "#home";
-menuLink.href = "#menu";
-contactLink.href = "#contact";
 
 navbuttons.appendChild(homeLink);
 navbuttons.appendChild(menuLink);
 navbuttons.appendChild(contactLink);
 
+const container = document.createElement("div"); // container for module content
+container.classList.add("container");
+container.id = "container";
 content.appendChild(container);
 
 

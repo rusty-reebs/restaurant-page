@@ -14,7 +14,7 @@ Objectives: use ES6 Modules and webpack to dynamically render pages with JavaScr
 ### Screenshot
 -----  
 
-<img src="/screenshots/Screen%20Shot%202021-08-29%20at%2013.49.45.png" height="250px">
+<img src="./screenshots/ninas.gif" height="250px">
 
 ### TIL Things I Learned
 -----  

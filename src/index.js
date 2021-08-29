@@ -1,9 +1,9 @@
 import { home } from "./components/home";
 import { menu } from "./components/menu";
 import { contact } from "./components/contact";
+import "./styles/style.css";
 
 const content = document.getElementById("content"); // main div in the HTML file
-
 
 const navbar = document.createElement("div"); // div for navbar
 navbar.classList.add("navcontainer");
@@ -37,27 +37,26 @@ container.classList.add("container");
 container.id = "container";
 content.appendChild(container);
 
-
 // Event listeners
 homeLink.addEventListener("click", () => {
-    clearContainer();
-    home();
+  clearContainer();
+  home();
 });
 menuLink.addEventListener("click", () => {
-    clearContainer();
-    menu();
+  clearContainer();
+  menu();
 });
 contactLink.addEventListener("click", () => {
-    clearContainer();
-    contact();
+  clearContainer();
+  contact();
 });
 
 const initialize = () => {
-    home();
+  home();
 };
 
 const clearContainer = () => {
-    container.removeChild(container.childNodes[0]);
+  container.removeChild(container.childNodes[0]);
 };
 
 initialize();

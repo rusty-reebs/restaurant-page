@@ -1,6 +1,8 @@
 # Restaurant Page project ☕️
 
-**A simple restaurant homepage using HTML, CSS, JavaScript modules and webpack.**
+**A restaurant homepage using HTML, CSS, JavaScript modules and webpack.**
+
+**See it live at (https://rusty-reebs.github.io/restaurant-page/)!**
 
 Date started: August 11, 2021  
 Date completed: August 17, 2021  

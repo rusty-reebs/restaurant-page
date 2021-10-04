@@ -7,8 +7,6 @@
 Date started: August 11, 2021  
 Date completed: August 17, 2021  
 
-**Run webpack to create the `index.html` and `main.js` files in `/dist`.**
-
 Objectives: use ES6 Modules and webpack to dynamically render pages with JavaScript.  
 
 ### Screenshot
